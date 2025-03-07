@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Hat Making Guide - Any Material!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        ol {
+            margin-bottom: 20px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        .example {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+        }
+        .example h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>DIY Hat Making Guide - Any Material!</h1>
+
+    <p>This guide will give you general steps to make a hat out of almost any material you can think of!  The key is to adapt these steps to the properties of your chosen material. Let's get started:</p>
+
+    <div>
+        <label for="materialInput">Enter your material:</label>
+        <input type="text" id="materialInput" value="Paper Towels"> <button onclick="updateMaterial()">Update Example</button>
+    </div>
+
+    <h2>General Steps for Hat Making</h2>
+
+    <ol>
+        <li><strong>Choose Your Material:</strong>  Think about what you want to make your hat out of!  Consider:
+            <ul>
+                <li><strong>Flexibility:</strong>  Is it easy to bend and shape?</li>
+                <li><strong>Strength:</strong> Will it hold its shape?</li>
+                <li><strong>Texture:</strong>  Do you like the look and feel?</li>
+                <li><strong>Availability:</strong> Do you have enough of it?</li>
+            </ul>
+            <p>Examples: Paper towels, fabric, cardboard, leaves, plastic bags, yarn, etc.</p>
+        </li>
+
+        <li><strong>Design Your Hat Shape:</strong> What kind of hat do you want to make?
+            <ul>
+                <li><strong>Simple Cone:</strong> Easy for many materials.</li>
+                <li><strong>Brimmed Hat:</strong> Requires a flatter, wider piece for the brim.</li>
+                <li><strong>Folded/Origami Style:</strong> Good for paper or flexible materials.</li>
+                <li><strong>Shaped Hat:</strong>  Think about the overall form (e.g., a top hat, a beanie shape).</li>
+            </ul>
+            <p>Sketching a quick design can be helpful!</p>
+        </li>
+
+        <li><strong>Gather Your Tools:</strong>  The tools will depend on your material!  You might need:
+            <ul>
+                <li><strong>Cutting Tools:</strong> Scissors, craft knife (adult supervision needed!).</li>
+                <li><strong>Fasteners:</strong> Tape, glue (hot glue, craft glue, paper glue), staples, needle and thread (for fabric), pins.</li>
+                <li><strong>Measuring Tools:</strong> Ruler, measuring tape (to fit your head!).</li>
+                <li><strong>Shaping Aids:</strong> Bowls, plates, cups (to trace circles or curves), your head (carefully!).</li>
+                <li><strong>Decorations (Optional):</strong> Markers, paint, glitter, ribbons, feathers, etc.</li>
+            </ul>
+        </li>
+
+        <li><strong>Shape and Construct Your Hat:</strong> This is the main part!
+            <ul>
+                <li><strong>Start with a Basic Shape:</strong>  Cut or shape your material into the basic pieces you need based on your design.</li>
+                <li><strong>Join the Pieces:</strong> Use your chosen fasteners (tape, glue, etc.) to connect the pieces and form the hat shape.</li>
+                <li><strong>Consider Head Size:</strong>  Make sure the hat will fit your head! You can measure your head circumference or try it on as you go.</li>
+                <li><strong>Reinforce if Needed:</strong>  If your material is flimsy, you might need to layer it or add supports to make the hat sturdier.</li>
+            </ul>
+        </li>
+
+        <li><strong>Finishing Touches and Decoration:</strong>
+            <ul>
+                <li><strong>Secure Loose Ends:</strong> Make sure everything is firmly attached.</li>
+                <li><strong>Add Decorations:</strong>  Personalize your hat with paint, markers, ribbons, etc.</li>
+                <li><strong>Let it Dry (if using glue):</strong> Allow sufficient drying time for glues to set properly.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Example: Making a Hat from <span id="materialNameHeading">Paper Towels</span></h2>
+
+    <div class="example">
+        <h3><span id="materialNameExample">Paper Towel</span> Cone Hat</h3>
+        <p>For a simple cone hat using <span id="materialNamePara">paper towels</span>, here's how you can adapt the general steps:</p>
+
+        <ol>
+            <li><strong>Material:</strong> <span id="materialNameList">Paper towels</span> (2-3 sheets for a small hat, more for larger).</li>
+            <li><strong>Design:</strong> Simple cone shape.</li>
+            <li><strong>Tools:</strong> Scissors, tape (masking tape or clear tape).</li>
+            <li><strong>Construction:</strong>
+                <ol type="a">
+                    <li>Lay out a <span id="materialNameConstruction">paper towel</span> sheet.</li>
+                    <li>Starting from one corner, roll the <span id="materialNameConstruction2">paper towel</span> into a cone shape. Adjust the tightness of the cone to get the desired size.</li>
+                    <li>Overlap the edges where the cone meets and secure them with tape on the inside and outside to hold the cone shape.</li>
+                    <li>Trim the bottom edge of the cone to make it even if needed.</li>
+                </ol>
+            </li>
+            <li><strong>Finishing:</strong>
+                <ol type="a">
+                    <li>You can decorate the <span id="materialNameFinishing">paper towel</span> hat with markers or crayons if you wish.</li>
+                    <li>For a slightly sturdier hat, you could use multiple layers of <span id="materialNameFinishing2">paper towels</span> taped together.</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <p>Remember to be creative and experiment! Hat making is a fun way to use different materials and express yourself.</p>
+
+    <script>
+        function updateMaterial() {
+            const materialInput = document.getElementById("materialInput");
+            const materialName = materialInput.value;
+
+            document.getElementById("materialNameHeading").textContent = materialName;
+            document.getElementById("materialNameExample").textContent = materialName;
+            document.getElementById("materialNamePara").textContent = materialName.toLowerCase(); // lowercase in paragraph
+            document.getElementById("materialNameList").textContent = materialName;
+            document.getElementById("materialNameConstruction").textContent = materialName.toLowerCase(); // lowercase in construction
+            document.getElementById("materialNameConstruction2").textContent = materialName.toLowerCase(); // lowercase in construction
+            document.getElementById("materialNameFinishing").textContent = materialName.toLowerCase(); // lowercase in finishing
+            document.getElementById("materialNameFinishing2").textContent = materialName.toLowerCase(); // lowercase in finishing
+        }
+
+        // Initial update on page load to use the default value from the input
+        window.onload = updateMaterial;
+    </script>
+
+</body>
+</html>
