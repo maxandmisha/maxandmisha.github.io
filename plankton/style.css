@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+#plankton-image { /* Changed ID to match Plankton image */
+    max-width: 300px; /* Adjust size as needed */
+    height: auto;
+    display: block; /* Prevent extra space below image */
+    margin: 0 auto 20px; /* Center image and add margin below */
+    opacity: 0; /* Set initial opacity to 0 (completely transparent) */
+}
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container label {
+    margin-right: 10px;
+}
+
+#freddy-slider { /* We'll still use this ID in JS, but adjust comment */
+    width: 200px; /* Adjust slider width as needed */
+}
